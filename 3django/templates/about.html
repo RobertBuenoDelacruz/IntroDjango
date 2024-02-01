@@ -1,8 +1,12 @@
-<!DOCTYPE html>
-<header>
-    <title>My Webpage!</title>
-</header>
-<body>
-    <h1>Another page with a new url</h1>
-    <p>New page!</p>
-</body>
+<!-- templates/about.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>About Page</h1>
+
+<h2>Another Page with a new URL</h2>
+
+<p>Welcome to my About Page.</p>
+
+{% endblock content %}
