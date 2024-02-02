@@ -2,12 +2,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<!-- Everything in between the block content will be put inside the block content tgs of base.html -->
+<!-- Everything in between the block content will be put inside the block content tags of base.html -->
     {% for post in object_list %}
-        <div class="post_entry">
-            <h1><a href="">{{ post.title }}</a></h1>
+        <div class="post-entry">
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.body }}</p>
         </div>
     {% endfor %}
-    
+
 {% endblock content %}
