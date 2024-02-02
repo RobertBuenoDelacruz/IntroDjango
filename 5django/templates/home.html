@@ -5,7 +5,9 @@
 <!-- Everything in between the block content will be put inside the block content tags of base.html -->
     {% for post in object_list %}
         <div class="post-entry">
-            <h2><a href="">{{ post.title }}</a></h2>
+            <!-- Use Djangos tagging library to create a URL to each blog;s BlogDetailView 
+            The BlogDetailView will forward to the templates/blog_detail.html -->
+            <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
             <p>{{ post.body }}</p>
         </div>
     {% endfor %}

@@ -1,0 +1,16 @@
+<!-- templates/post_detail.html -->
+
+{% extends 'base.html' %}
+
+<!-- The view BlogDetailView will provide me all the column for the specific row the user clicks on 
+
+We display the title and body from our context object which the BlogDetailView makes accessible post-->
+{% block content %}
+<div class="post-entry">
+    <h2>{{ post.title }}</h2>
+    <h2>{{ post.id }}</h2>
+    <p>{{ post.body }}</p>
+</div>
+
+
+{% endblock content %}
